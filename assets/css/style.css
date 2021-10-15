@@ -1,0 +1,44 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #F4D1B5;
+    font-family: 'Zilla Slab', serif;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #1A1B1D;
+}
+#navbar h2 {
+    margin: 20px
+}
+#navbar h2:hover {
+    cursor: pointer;
+    opacity: 0.5;
+
+}
+.content {
+    display: flex;
+    flex-direction: column;
+}
+.child {
+    color: #ff6961;
+    /* position: absolute; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 42px;
+    text-align: center;
+}
+#donut_holder {
+    display: flex;
+    flex-direction: row;
+}
+.donut {
+    width: 90px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
