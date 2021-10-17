@@ -7,9 +7,17 @@ html, body {
 }
 
 #navbar {
+    position: fixed;
+    top: 0px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    background: #e0b699;
+    width: 100%;
+    z-index: 1;
+}
+#navbar a {
+    text-decoration: none;
     color: #1A1B1D;
 }
 #navbar h2 {
@@ -34,19 +42,108 @@ html, body {
     display: flex;
     flex-direction: column;
     color: #ff6961;
-    /* position: absolute;
-    top: 50%;
-    right: 50%; */
-    /* transform: translate(-50%, -50%); */
     font-size: 42px;
     text-align: center;
-}
-#donut_holder {
-    display: flex;
-    flex-direction: row;
+    z-index: 1;
+    /* position: absolute; */
 }
 .donut {
+    transition: transform .7s ease-in-out;
+}
+.donut:hover {
+    transform: rotate(360deg);
+}
+
+#arrow {
+    position: relative;
+    width: 30px;
+    transition: 0.1s ease-in-out;
+}
+#arrow:hover {
+    transform: translateY(10px)
+}
+
+#since1939 {
+    color: black;
+    margin-top: -15px;
+    font-size: x-large;
+}
+
+#donut_1 {
+    position: absolute;
     width: 90px;
-    padding-left: 5px;
-    padding-right: 5px;
+    top: 35%;
+    left: 37%;
+}
+#donut_2 {
+    position: absolute;
+    width: 90px;
+    top: 20%;
+    left: 30%;
+}
+#donut_3 {
+    position: absolute;
+    width: 90px;
+    top: 9%;
+    left: 53%;
+}
+#donut_4 {
+    position: absolute;
+    width: 90px;
+    top: 22%;
+    left: 66%;
+}
+#donut_5 {
+    position: absolute;
+    width: 90px;
+    top: 32%;
+    left: 56%;
+}
+#donut_6 {
+    position: absolute;
+    width: 90px;
+    top: 7%;
+    left: 32%;
+}
+#donut_7 {
+    position: absolute;
+    width: 90px;
+    top: 7%;
+    left: 70%;
+}
+#donut_8 {
+    position: absolute;
+    width: 90px;
+    top: 35%;
+    left: 76%;
+}
+#donut_9 {
+    position: absolute;
+    width: 90px;
+    top: 32%;
+    left: 20%;
+}
+#donut_10 {
+    position: absolute;
+    width: 90px;
+    top: 18%;
+    left: 15%;
+}
+#donut_11 {
+    position: absolute;
+    width: 90px;
+    top: 18%;
+    left: 85%;
+}
+
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-header {
+    font-size: xx-large;
+    /* text-decoration: underline; */
+    color: #ff6961;
 }

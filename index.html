@@ -9,38 +9,34 @@
         <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;600&display=swap" rel="stylesheet"> 
     </head>
     <body>
-        <div id="navbar" href="#default">
-            <h2 class="active" href="#home">Home</h2>
-            <h2 href="#aboutus">About Us</h2>
-            <h2 href="#menu">Menu</h2>
-        </div> 
-            
-
-        <div class="container">
+        <div class="container" id="home">
+            <img class="donut" id="donut_1" src="assets/img/donut_1.png">
+            <img class="donut" id="donut_2" src="assets/img/donut_2.png">
+            <img class="donut" id="donut_3" src="assets/img/donut_3.png">
+            <img class="donut" id="donut_4" src="assets/img/donut_4.png">
+            <img iclass="donut" id="donut_5" src="assets/img/donut_5.png">
+            <img class="donut" id="donut_6" src="assets/img/donut_1.png">
+            <img class="donut" id="donut_7" src="assets/img/donut_2.png">
+            <img class="donut" id="donut_8" src="assets/img/donut_3.png">
+            <img class="donut" id="donut_9" src="assets/img/donut_4.png">
+            <img class="donut" id="donut_10" src="assets/img/donut_5.png">
+            <img class="donut" id="donut_11" src="assets/img/donut_5.png">
             <div class="title-screen-container">
+                <div id="navbar" href="#default">
+                    <a href="#home"><h2 class="active">Home</h2></a>
+                    <a href="#aboutus"><h2 class="active">About Us</h2></a>
+                    <a href="#menu"><h2 class="active">Menu</h2></a>
+                </div> 
                 <div class="title-screen-content">
                     <h2 style="margin-bottom: -45px;">KingPin</h2>
                     <h2 style="margin-bottom: 15px;">Donuts</h2>
-                    <div id="donut_holder">
-                        <img class="donut" src="assets/img/donut_1.png">
-                        <img class="donut" src="assets/img/donut_1.png">
-                        <img class="donut" src="assets/img/donut_1.png">
-                    </div>
-                    
+                    <h4 id="since1939">Since 1939</h4>
                 </div>
-
-
-
+            <a href="#aboutus"><img id="arrow" src="assets/img/arrow.png" href="#aboutus"></a>
 
             </div>
-
-
-
-
-
-            
-            <div href="#aboutus" class="content" style="top: 100%;">
-                <h1>test</h1>
+            <div class="content" style="height: 100vh;">
+                <h2 class="section-header"d id="aboutus">About Us</h2>
             </div>
             <h1>test 2</h1>
             
@@ -48,4 +44,15 @@
         
 
     </body>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </html>
