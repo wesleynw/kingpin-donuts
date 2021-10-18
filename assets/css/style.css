@@ -3,7 +3,7 @@ html, body {
     padding: 0;
     height: 100%;
     background: #F4D1B5;
-    font-family: 'Zilla Slab', serif;
+    font-family: 'Squada One', cursive;
 }
 
 #navbar {
@@ -11,14 +11,15 @@ html, body {
     top: 0px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     background: #e0b699;
     width: 100%;
     z-index: 1;
+    font-size: large;
 }
 #navbar a {
     text-decoration: none;
-    color: #1A1B1D;
+    color: #474747;
 }
 #navbar h2 {
     margin: 20px
@@ -28,26 +29,44 @@ html, body {
     opacity: 0.5;
 
 }
+.navbar-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#navbar-donut {
+    width: 65px;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: -20px;
+}
+
 .container {
     position: relative;
 }
 .title-screen-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    height: 100vh;
+    height: 110vh;
 }
-.title-screen-content {
+.title {
+    font-size: 55px;
+    text-align: center;
+}
+#title-donuts {
     display: flex;
     flex-direction: column;
-    color: #ff6961;
-    font-size: 42px;
-    text-align: center;
-    z-index: 1;
-    /* position: absolute; */
 }
+.donut-row {
+    display: flex;
+}
+
+
+
 .donut {
+    width: 90px;
     transition: transform .7s ease-in-out;
 }
 .donut:hover {
@@ -69,81 +88,20 @@ html, body {
     font-size: x-large;
 }
 
-#donut_1 {
-    position: absolute;
-    width: 90px;
-    top: 35%;
-    left: 37%;
-}
-#donut_2 {
-    position: absolute;
-    width: 90px;
-    top: 20%;
-    left: 30%;
-}
-#donut_3 {
-    position: absolute;
-    width: 90px;
-    top: 9%;
-    left: 53%;
-}
-#donut_4 {
-    position: absolute;
-    width: 90px;
-    top: 22%;
-    left: 66%;
-}
-#donut_5 {
-    position: absolute;
-    width: 90px;
-    top: 32%;
-    left: 56%;
-}
-#donut_6 {
-    position: absolute;
-    width: 90px;
-    top: 7%;
-    left: 32%;
-}
-#donut_7 {
-    position: absolute;
-    width: 90px;
-    top: 7%;
-    left: 70%;
-}
-#donut_8 {
-    position: absolute;
-    width: 90px;
-    top: 35%;
-    left: 76%;
-}
-#donut_9 {
-    position: absolute;
-    width: 90px;
-    top: 32%;
-    left: 20%;
-}
-#donut_10 {
-    position: absolute;
-    width: 90px;
-    top: 18%;
-    left: 15%;
-}
-#donut_11 {
-    position: absolute;
-    width: 90px;
-    top: 18%;
-    left: 85%;
-}
-
 
 .content {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+.paragraph {
+    font-family: 'Zilla Slab', serif;
+    width: 40%;
+    text-align: center;
 }
 .section-header {
-    font-size: xx-large;
+    font-size: 55px;
     /* text-decoration: underline; */
     color: #ff6961;
 }
