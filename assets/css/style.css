@@ -21,7 +21,9 @@ html, body {
 }
 #navbar a {
     text-decoration: none;
-    color: #474747;
+    /* color: #474746; */
+    color: #2b2b2a;
+    /* color: #b; */
 }
 #navbar h2 {
     margin: 20px
